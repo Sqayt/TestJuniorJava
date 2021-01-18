@@ -22,9 +22,9 @@ public class DemoApplication
         {
 
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            System.out.println ("Введите путь к файлу (например('C:\\DB\\check01.csv'))");
+            System.out.println ("Введите путь к файлу (например(C:\\DB\\check01.csv))");
             String URLFiles = bufferedReader.readLine();
-            System.out.println ("Введите путь куда сохранить новый файл (например('C:\\source01.csv'))");
+            System.out.println ("Введите путь куда сохранить новый файл (например(C:\\source01.csv))");
             String URLtoFiles = bufferedReader.readLine();
             DB.sql(URLFiles,URLtoFiles);
             try
